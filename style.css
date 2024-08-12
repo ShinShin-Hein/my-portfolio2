@@ -1,0 +1,99 @@
+/* global style start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+/* global style end */
+
+/* profile start */
+.myProfile{
+    /* background-color: pink; */
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+.imgContainer img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.myProfile div{
+    margin-bottom: 13px;
+}
+.myProfile div p , .myProfile div h2{
+    text-align: center;
+}
+.social{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 8px;
+}
+.social a{
+    color: black;   
+    font-size: 25px;
+}
+/* profile end */
+
+/* information start */
+.main{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    padding: 0px 50px;
+    justify-content: center;
+}
+.description {
+    /* background-color: aquamarine; */
+    margin-top: 15px;
+}
+.description div{
+    margin-bottom: 13px;
+}
+.description div a{
+    text-decoration: none;
+    color: black;
+}
+.description div b i{
+    margin-right: 5px;
+}
+.info1, .info2, .info3{
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+    border-right: 1px solid gray;
+    padding: 25px 20px;
+}
+.info3{
+    border-right: none;
+}
+/* information end */
+
+
+/* media query start */
+@media (max-width: 1200px) {
+    .info1, .info2, .info3{
+        padding: 13px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .main{
+        grid-template-columns: auto;
+    }
+    .info1, .info2, .info3{
+        border-right: none;
+        margin-bottom: 20px;
+    }
+    .info2{
+        padding-bottom: 25px;
+    }
+    .info1, .info2{
+        border-bottom: 1px solid gray;
+    }
+}
+
